@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+
+/*-----------------------------------
+----------------COVER----------------
+-------------------------------------*/
+
+/*base*/
+.cover{height: 40%; background-size: cover; -o-background-size: cover; 
+	-moz-background-size: cover; background-position: center center; position: relative}
+.cover_filter{position: absolute; width: 100%; height: 100%; z-index: 0; opacity: 0.4; background-color: black}
+
+/*captation*/
+.cover_caption{display: table; width: 100%; height: 100%; position: relative; z-index: 1; padding: 20px}
+.cover_caption_copy{display: table-cell; vertical-align: middle; text-align: center; color: #E8F1F2}
+.cover_caption_copy_button{display: inline-block; padding: 10px 30px; border-radius: 5px; text-decoration: none; background-color: #E8F1F2; color: black}
+
+
+/*-----------------------------------
+----------------CARD-----------------
+-------------------------------------*/
+
+/*base*/
+.card{max-width: 1200px; margin: 30px auto}
+
+/*item*/
+.card_item{width: 30%; margin: 0 1.5%; float: left; text-decoration: none; color: black; background-color: #E8F1F2}
+.card_item_image{width: 100%; height: auto}
+.card_item_copy{padding: 5px 20px}
+.card_item_copy h3{margin-bottom: 0}
+
+
+/*-----------------------------------
+---------------ARTICLE---------------
+-------------------------------------*/
+
+/*base*/
+.article{max-width: 960px; margin: 40px auto; padding: 30px; position: relative; z-index: 1; margin-top: -5%; background-color: #E8F1F2}
+
+/*button*/
+.article_button{padding:10px 30px; border-radius:5px; text-decoration:none; background-color:#01172F; color:white; border-color:white; border:2px; cursor:pointer; }
+.article_button2{padding:10px 30px; border-radius:5px; text-decoration:none; background-color:#006000; color:white; border-color:white; border:2px; cursor:pointer; }
+.article_button3{padding:10px 30px; border-radius:5px; text-decoration:none; background-color:#E10000; color:white; border-color:white; border:2px; cursor:pointer; }
+
+
+/*-----------------------------------
+--------------SMARTPHONE-------------
+-------------------------------------*/
+
+@media (max-width: 767px){
+	
+	
+	/*-----------------------------------
+	----------------COVER----------------
+	-------------------------------------*/
+	
+	/*base*/
+	.cover{height: 100%}
+	
+	
+	/*-----------------------------------
+	----------------CARD-----------------
+	-------------------------------------*/
+	
+	/*item*/
+	.card_item{width: 90%; margin: 5%}
+	
+	
+	/*-----------------------------------
+	---------------ARTICLE---------------
+	-------------------------------------*/
+	
+	/*base*/
+	.article{margin: 5%}
+	
+}
+
+
+/*-----------------------------------
+---------------TABLET----------------
+-------------------------------------*/
+
+@media (max-width: 998px){
+	
+	
+	/*-----------------------------------
+	---------------ARTICLE---------------
+	-------------------------------------*/
+	
+	/*base*/
+	.article{margin: 40px 1.5%}
+	
+}

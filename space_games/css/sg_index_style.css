@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/*-----------------------------------
+----------------COVER----------------
+-------------------------------------*/
+
+/*base*/
+.cover{height: 70%; position: relative}
+.cover-single{height: 40%}
+
+/*slider*/
+.cover_slider{position: absolute; top: 0; height: 100%; width: 10%; display: inline-block; z-index: 2; text-decoration: none}
+.cover_slider_succ{right: 0}
+.cover_slider_copy{width: 100%; position: absolute; font-weight: bold; font-size: 30px; top: 50%; text-align: center; color: #E8F1F2}
+
+/*image*/
+.cover_image{background-position: center center; height: 100%; width: 100%; background-size: cover; 
+	-o-background-size: cover; -moz-background-size: cover; display: none}
+.cover_image_filter{position: absolute; width: 100%; height: 100%; z-index: 0; opacity: 0.4; background-color: black}
+.cover_image_caption{display: table; width: 100%; height: 100%; position: relative; z-index: 1; padding: 20px;}
+.cover_image_caption_copy{display: table-cell; vertical-align: middle; text-align: center; color: #E8F1F2}
+.cover_image_caption_copy_button{display: inline-block; padding: 10px 30px; border-radius: 5px; text-decoration: none; background-color: #E8F1F2; color: black}
+
+/*selector*/
+.cover_selector{text-align: center; position: absolute; bottom: 6%; width: 100%; z-index: 2}
+.cover_selector_dot{display: inline-block; padding: 10px; border-radius: 50%; margin: 6px; cursor: pointer; background-color: #001A23}
+.cover_selector_dot_active, .cover_selector_dot:hover{background-color: #E8F1F2}
+
+
+/*-----------------------------------
+----------------CARD-----------------
+-------------------------------------*/
+
+/*base*/
+.card{max-width: 1200px; margin: 30px auto}
+
+/*item*/
+.card_item{width: 30%; margin: 0 1.5%; float: left; text-decoration: none; color: black; background-color: #E8F1F2}
+.card_item_image{width: 100%; height: auto; background-position: center center}
+.card_item_copy{padding: 5px 20px}
+.card_item_copy h3{margin-bottom: 0}
+
+
+/*-----------------------------------
+--------------SMARTPHONE-------------
+-------------------------------------*/
+
+@media (max-width: 767px){
+	
+	
+	/*-----------------------------------
+	----------------COVER----------------
+	-------------------------------------*/
+	
+	/*base*/
+	.cover{height: 100%}
+	
+	/*slider*/
+	.cover_slider{width: 15%}
+	
+	
+	/*-----------------------------------
+	----------------CARD-----------------
+	-------------------------------------*/
+	
+	/*item*/
+	.card_item{width: 90%; margin: 5%}
+	
+}
+
+
+/*-----------------------------------
+---------------TABLET----------------
+-------------------------------------*/
+
+@media (max-width: 998px){
+	
+	
+	/*-----------------------------------
+	----------------COVER----------------
+	-------------------------------------*/
+	
+	/*slider*/
+	.cover_slider{width: 20%}
+	
+}
